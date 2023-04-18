@@ -18,6 +18,6 @@ filename = "fruit_macros.txt"
 
 filepathname = asw_S3_dabw + filename
 
-my_fruit_list = pandas.read_csv(filepathname)
+my_fruit_list = pd.read_csv(filepathname)
 
 streamlit.dataframe(my_fruit_list)
