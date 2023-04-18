@@ -16,6 +16,8 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 asw_S3_dabw = "https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/"
 filename = "fruit_macros.txt"
 
-my_fruit_list = pandas.read_csv(asw_S3_dabw + filename)
+filepathname = asw_S3_dabw + filename
+
+my_fruit_list = pandas.read_csv(filepathname)
 
 streamlit.dataframe(my_fruit_list)
