@@ -44,7 +44,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice)
 
 # use api calls
-fruityvice_response = rq.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = rq.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 # comment out this json display
 #streamlit.text(fruityvice_response.json())
 
