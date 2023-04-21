@@ -36,6 +36,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #only display the selected fruit
 streamlit.dataframe(fruits_to_show)
 
+# New Section
+streamlit.header("Fruityvice Fruit Advice!")
+
 
 # use api calls
 fruityvice_response = rq.get("https://fruityvice.com/api/fruit/watermelon")
