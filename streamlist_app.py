@@ -42,7 +42,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 # use api calls
 fruityvice_response = rq.get("https://fruityvice.com/api/fruit/watermelon")
-#streamlit.text(fruityvice_response.json())
+streamlit.text(fruityvice_response.json())
 
 # write your own comment -what does the next line do? 
 # converses joson to table view
